@@ -1,0 +1,44 @@
+.user {
+    margin: 1rem;
+    width: calc(45% - 2rem);
+    min-width: 17.5rem;
+}
+
+.user a {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    padding: 1rem;
+    color: white;
+    background: #292929;
+}
+
+.user a:hover,
+.user a:active {
+    background: white;
+}
+
+.user__content {
+    padding: 0;
+}
+
+.user__info h2 {
+    font-size: 1.5rem;
+    margin: 0 0 0.5rem 0;
+    margin: 0;
+    font-weight: bold;
+    color: #ffd900;
+}
+
+.user:hover h2,
+.user:active h2,
+.user:hover h4,
+.user:active h4 {
+    color: #292929;
+}
+
+.user__info h4 {
+    margin: 0;
+}

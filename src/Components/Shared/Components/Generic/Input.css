@@ -1,0 +1,41 @@
+.input-config {
+    margin: 1rem 0;
+}
+
+.input-config label,
+.input-config input,
+.input-config textarea {
+    display: block;
+}
+
+.input-config label {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.input-config input,
+.input-config textarea {
+    width: 100%;
+    font: inherit;
+    border: 1px solid #ccc;
+    background: #f8f8f8;
+    padding: 0.15rem 0.25rem;
+}
+
+.input-config input:focus,
+.input-config textarea:focus {
+    outline: none;
+    background: #ebebeb;
+    border-color: #0051ff;
+}
+
+.input-config--invalid label,
+.input-config--invalid p {
+    color: red;
+}
+
+.input-config--invalid input,
+.input-config--invalid textarea {
+    border-color: red;
+    background: #ffd1d1;
+}

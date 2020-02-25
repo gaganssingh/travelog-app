@@ -1,0 +1,29 @@
+.authentication {
+    width: 90%;
+    max-width: 25rem;
+    margin: 7rem auto;
+    text-align: center;
+}
+
+.authentication__header {
+    color: white;
+    text-align: center;
+}
+
+.authentication form {
+    margin-bottom: 1rem;
+}
+
+.authentication-demo {
+    margin-top: 25px;
+}
+
+.authentication-demo h4,
+.authentication-demo p {
+    margin: 5px;
+    padding: 0;
+}
+
+.authentication-demo span {
+    font-weight: bold;
+}
