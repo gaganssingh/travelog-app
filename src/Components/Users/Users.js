@@ -24,9 +24,11 @@ function Users() {
 
     return (
         <React.Fragment>
-            <h1 className="users-heading center">
-                Explore places by other users
-            </h1>
+            {loadedUsers && (
+                <h1 className="users-heading center">
+                    Explore places by other users
+                </h1>
+            )}
             <ErrorPopup error={error} onClear={clearError} />
             {isLoading && (
                 <div className="center">

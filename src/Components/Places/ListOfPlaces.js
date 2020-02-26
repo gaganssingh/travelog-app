@@ -1,14 +1,10 @@
-import React, { useContext } from "react";
-import { AuthContext } from "../Shared/Context/AuthContext";
+import React from "react";
 import Card from "../Shared/Components/Generic/Card";
 import Button from "../Shared/Components/Generic/Button";
 import Place from "./Place";
 import "./ListOfPlaces.css";
 
 function ListOfPlaces(props) {
-    console.log(props);
-    const auth = useContext(AuthContext);
-    console.log(auth.userId);
     if (props.items.length === 0) {
         return (
             <div className="place-list center">
