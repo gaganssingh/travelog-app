@@ -8,7 +8,7 @@ function User(props) {
     return (
         <li className="user">
             <Card className="user__content">
-                <Link to={`/${props.id}/places`}>
+                <Link to={`/${props.id}/places`} className="user__card">
                     <div className="user-item__image">
                         <UserImage
                             image={`https://avatars.dicebear.com/v2/human/${props.name}.svg?options[mood][]=happy`}
@@ -17,7 +17,6 @@ function User(props) {
                     </div>
                     <div className="user__info">
                         <h2>{props.name}</h2>
-                        <h4>See all places by {props.name}</h4>
                     </div>
                 </Link>
             </Card>
