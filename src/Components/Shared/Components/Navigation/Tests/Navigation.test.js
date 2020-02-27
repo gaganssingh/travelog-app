@@ -3,14 +3,8 @@ import ReactDOM from "react-dom";
 import { BrowserRouter } from "react-router-dom";
 import Enzyme, { shallow } from "enzyme";
 import Adapter from "enzyme-adapter-react-16";
-Enzyme.configure({ adapter: new Adapter() });
 import Navigation from "../Navigation";
-
-// it("renders without crashing", () => {
-//     const div = document.createElement("div");
-//     ReactDOM.render(<Navigation />, div);
-//     ReactDOM.unmountComponentAtNode(div);
-// });
+Enzyme.configure({ adapter: new Adapter() });
 
 function Drawer() {}
 
@@ -30,8 +24,5 @@ describe("Parent Component", () => {
                 </Drawer>
             )
         ).toBe(false);
-        // const wrapper = shallow(<Navigation />);
-        // expect(wrapper.find(Child)).toHaveLength(1);
-        // expect(wrapper.find(Child)).toHaveLength(1);
     });
 });
