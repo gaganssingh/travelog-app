@@ -1,68 +1,84 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# babyaid
 
-## Available Scripts
+## Description
 
-In the project directory, you can run:
+An app for travelers that allows them to log the places they visit and seem them on an embedded Google Maps view.
 
-### `npm start`
+### Features
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+-   Users not logged in can explore places added by other users.
+-   Users can signup, login and logout.
+-   After logging in, a place of interest can be added by filling out a short form that requires the place's name, description and address.
+-   The MY PLACES page displays a list of all places added by a user, along with a Google Map view.
+-   EDIT button on MY PLACES page allows updating the names and descriptions of a previously added place, but only by the user that added it.
+-   DELETE button on the MY PLACES page allows the deletetion of a place from the users profile, but only by the user that added it in the first place.
+-   Clicking on VIEW ON GOOGLE button on the MY PLACES page opens a new google map window pointing to the place that was clicked.
+-   If the place is well known (such as major landmarks, cities, government sites, etc.), only the name of the place followed by the city name is sufficient. E.g. CN Tower, Toronto is a valid address (instead of typing out the full street address).
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+### Authentication Features
 
-### `npm test`
+-   Passwords are hashed and managed via JWT (jsonwebtokens).
+-   Users are automatically logged out after 1 hour for added security.
+-   A popup displays appropriate information if the email or password used during login are incorrect.
+-   If signing up using a previously used email, an error popup is displayed.
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Live page:
 
-### `npm run build`
+https://travelog-app.now.sh
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Technical stack
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+### Front end built using
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+-   React (create-react-app)
+-   React Router
 
-### `npm run eject`
+### Back end built using
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+-   Nodejs
+-   Express
+-   Winston
+-   Morgan
+-   Helmet
+-   Dotenv
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Database built & hosted using
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+-   PostgreSQL
+-   Knex
+-   Postgrator
+-   Heroku
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+### External API
 
-## Learn More
+-   Google Geocoding API
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### API testing done using
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+-   Chai
+-   Mocha
+-   Supertest
 
-### Code Splitting
+## Screenshots
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+![Collage](README_IMAGES/Collage.png)
+![Homepage on mobile](README_IMAGES/HomePage-mobile.png)
+![Sidebar on mobile](README_IMAGES/Sidebar-mobile.png)
+![My places on mobile](README_IMAGES/my-places-mobile.png)
+![Add a place on mobile](README_IMAGES/add-place-mobile.png)
+![Edit a place on mobile](README_IMAGES/edit-place-mobile.png)
 
-### Analyzing the Bundle Size
+## Github repos:
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+### Client:
 
-### Making a Progressive Web App
+https://github.com/gaganssingh/travelog-app
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+### API:
 
-### Advanced Configuration
+https://github.com/gaganssingh/travelog-server
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+## User Feedback:
 
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+First: https://gist.github.com/gaganssingh/b48438c975cef5b6ba7ffd9b125f1b75
+Second: https://gist.github.com/gaganssingh/f0a4caa96cccc8a90d7321101e10743b
