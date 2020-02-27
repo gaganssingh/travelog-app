@@ -62,11 +62,10 @@ https://travelog-app.now.sh
 ## Screenshots
 
 ![Collage](README_IMAGES/Collage.png)
-![Homepage on mobile](README_IMAGES/HomePage-mobile.png)
-![Sidebar on mobile](README_IMAGES/Sidebar-mobile.png)
-![My places on mobile](README_IMAGES/my-places-mobile.png)
-![Add a place on mobile](README_IMAGES/add-place-mobile.png)
-![Edit a place on mobile](README_IMAGES/edit-place-mobile.png)
+![Homepage](README_IMAGES/Homepage-ipad.png)
+![My places](README_IMAGES/my-places-ipad.png)
+![Add a place](README_IMAGES/Add-place-ipad.png)
+![Edit a place](README_IMAGES/Update-ipad.png)
 
 ## Github repos:
 
