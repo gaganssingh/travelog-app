@@ -28,7 +28,7 @@ function Navigation() {
 
             <Header>
                 <button className="navigation__menu-btn" onClick={openDrawer}>
-                    {/* span used to create the hamburger icon */}
+                    {/* spans used to create the hamburger icon */}
                     <span />
                     <span />
                     <span />

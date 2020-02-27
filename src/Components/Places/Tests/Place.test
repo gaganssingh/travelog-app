@@ -1,0 +1,26 @@
+import React from "react";
+import ReactDOM from "react-dom";
+import { BrowserRouter } from "react-router-dom";
+import Place from "../Place";
+
+it("renders without crashing", () => {
+    const props = {
+        id: 1,
+        title: "CN Tower",
+        description: "Tallest structure",
+        address: "123 St, Toronto",
+        coordinates: {
+            lat: 40.11,
+            lng: -29.11
+        },
+        creatorId: 1
+    };
+    const div = document.createElement("div");
+    ReactDOM.render(
+        <BrowserRouter>
+            <Place {...props} />
+        </BrowserRouter>,
+        div
+    );
+    ReactDOM.unmountComponentAtNode(div);
+});

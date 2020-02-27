@@ -1,0 +1,5 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Backdrop renders 1`] = `<div />`;
+
+exports[`Check it returns a div 1`] = `<div />`;
